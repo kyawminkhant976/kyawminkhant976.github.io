@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <h1 class="focusTitle">Focus</h1>
+
+    <div id="myData">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+
+        <label for="">Gender</label>
+
+        <input type="radio" value="Male" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" value="Female" id="female" name="gender">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="">Hobbies</label>
+        <br><br>
+        <div>
+            <input type="checkbox" name="hobbies[]" value="reading" id="reading">
+            <label for="reading">Reading</label>
+        </div>
+        <div>
+            <input type="checkbox" name="hobbies[]" value="travelling" id="travelling">
+            <label for="reading">Travelling</label>
+        </div>
+        <div>
+            <input type="checkbox" name="hobbies[]" value="dancing" id="dancing">
+            <label for="reading">Dancing</label>
+        </div>
+        <div>
+            <input type="checkbox" name="hobbies[]" value="swimming" id="swimming" disabled>
+            <label for="reading">Swimming</label >
+        </div>
+        <div>
+            <input type="checkbox" name="hobbies[]" value="singing" id="singing">
+            <label for="reading">Singing</label>
+        </div>
+        <br><br>
+        <div>
+            <label for="fName">Father Name</label>
+            <br><br>
+            <input type="text" value="Kyaw Min Khant" id="fName" readonly>
+        </div>
+
+        <p></p>
+
+        <div></div>
+
+        <label for="">Rules</label>
+        <ul>
+            <li>This is First Rule</li>
+            <li>This is Second Rule</li>
+            <li>This is Third Rule</li>
+            <li>This is Fourth Rule</li>
+            <li>This is Fifth Rule</li>
+            <li>This is Sixth Rule</li>
+            <li>This is Seventh Rule</li>
+        </ul>
+    </div>
+</body>
+</html>

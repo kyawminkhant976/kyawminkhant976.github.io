@@ -1,0 +1,24 @@
+h1{
+    /* HexCode */
+    /* 0 to 9, A to F */
+    /* rgb - red green blue */
+    color: #ff0000; 
+    font-size: 50px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Short Hex Code */
+    /* color: #f00 */
+
+    /* RGB */
+    /* 0 to 255 */
+    /* color: rgb(255 100 0); */
+
+}
+
+p{
+    background-color: greenyellow;
+    width: 50%;
+    text-indent: 50px;
+}

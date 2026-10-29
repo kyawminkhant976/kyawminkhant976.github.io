@@ -1,0 +1,271 @@
+/* Universal Selector */
+
+*{
+    /* color: red; */
+    margin: 0;
+    padding: 0;
+}
+
+/* Tag Selector / Element Selector */
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+/* Attribute Selector */
+a[title="google"] {
+    color: grey;
+}
+
+/* ID Selector */
+
+#idselector{
+    color: brown;
+    text-indent: 50px;
+    line-height: 30px;
+    word-spacing: 40px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+/* Class Selector */
+
+.classselector{
+    color: green;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+/* Descandant */
+
+#desc  a{
+    color: red;
+}
+
+/* Child Selector */
+/* spacing ignore */
+
+#child > a{  
+    color: red;
+}
+
+/* Pseudo Selector */
+
+a:link{
+    color: yellow;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: green;
+}
+
+a:visited{
+    color: black;
+}
+
+/* Target */
+
+p:target{
+    color: brown;
+    text-transform: uppercase;
+    word-spacing: 20px;
+    line-height: 15px;
+}
+
+/* Focus */
+
+.focusTitle{
+    text-align: center;
+    color: red;
+}
+
+#myData{
+    width: 50%;
+    margin: auto;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 35px;
+    outline: none;
+}
+
+input[type="text"]:focus{
+    background-color: red;
+    color: green;
+    letter-spacing: 10px; 
+    outline: none;
+}
+
+/* Checked */
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-style: italic;
+
+}
+
+/* Disabeled & Enabeled */
+
+input[type="checkbox"]:enabled + label {
+    color: green;
+}
+
+input[type="checkbox"]:checked + label {
+    color: red;
+    font-style: italic;
+}
+
+input[type="checkbox"]:disabled + label {
+    color: grey;
+}
+
+/* Read Write */
+
+#fName:read-only{
+    background-color: green;
+    color: white;
+}
+
+/* Empty */
+
+div:empty{
+    height: 20px;
+    background-color: red;
+}
+
+/* First Child */
+ul li:last-child{
+    background-color: red;
+}
+
+/* Last Child */
+ul li:first-child{
+    background-color: green;
+}
+
+/* Nth Child */
+ul li:nth-child(4){
+    background-color: yellow;
+}
+
+/* Margin */
+
+#margin1{
+    border: 1px solid black;
+    /* margin: 50px; */
+    /* T/R/B/L take spacing from all of those four */
+    /* margin: 40px 0; */
+    /* T&B / L&R */
+    /* margin: 40px 100px 0; */
+    margin: 100px 50px 0 10px;
+    /* T/R/B/L */
+}
+
+#margin2{
+    margin-top: 100px;
+}
+
+/* Padding */
+/* Similar to Margin - T/R/B/L*/
+
+.padding1{
+    border: 1px solid red;
+    padding: 50px 10px 100px 20px;
+}
+
+/* Border */
+
+.border1{
+    /* border: 5px solid red; */
+    border-top: 30px solid red;
+}
+
+.border2{
+    border-style: dashed dotted solid;
+    border-color: red green yellow;
+    border-width: 10px 20px 30px;
+}
+
+.border{
+    border: 10px solid red;
+    border-radius: 20px 10px;
+}
+
+/* Layout */
+
+.block{
+    border: 1px solid red;
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+}
+
+.inline{
+    border: 1px solid;
+    width: 400px;
+    display: inline-block;
+}
+
+/* Float */
+
+.float_right{
+    width: 40%;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_left{
+    width: 40%;
+    float: left;
+}
+
+/* Grid */
+
+.gridOne div,.gridTwo div,.gridThree div{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.gridOne{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* column-gap: 30px;
+    row-gap: 40px; */
+    gap: 30px;
+}
+
+
+.gridTwo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.columnAdd{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.gridThree{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+.rowAdd{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
