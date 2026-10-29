@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(144, 0, 255);
+}
+
+.login-con{
+    background-color: white;
+    width: 400px;
+    padding: 35px;
+    border-radius: 20px;
+    margin: 100px auto;
+}
+
+.login-con h1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.eAndp{
+    margin-bottom: 20px;
+}
+
+.eAndp label{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.eAndp input{
+    width: 368px;
+    padding: 12px 15px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+
+.eAndp input:focus{
+    border-color: rgb(144, 0, 255);
+}
+
+.options{
+    height: 25px;  
+    margin-bottom: 25px;
+}
+
+.remember{
+    float: left;
+    font-size: 16px;
+}
+
+.options a{
+    float: right;
+    color: rgb(144, 0, 255);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.options a:hover, .signup a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.options a:active, .signup a:active{
+    color: red;
+}
+
+.loginbtn{
+    width: 100%;
+    padding: 12px 0;
+    background-color: rgb(144, 0, 255);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.loginbtn:hover{
+    background-color: black ;
+}
+
+.signup{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.signup a{
+    color: rgb(144, 0, 255);
+    text-decoration: none;
+}
